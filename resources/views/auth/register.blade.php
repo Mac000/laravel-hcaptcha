@@ -29,6 +29,12 @@
                 <x-jet-input class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
 
+            {{-- hCaptcha code --}}
+            <div class="mt-4">
+                <div class="h-captcha" data-sitekey="4cd35e8a-c7ce-4b67-ad0a-252afe50b6d7"></div>
+                <script src="https://hcaptcha.com/1/api.js" async defer></script>
+            </div>
+
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
                     {{ __('Already registered?') }}
